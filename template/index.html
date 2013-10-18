@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>小百合工作室招新啦</title>
+<link href="static/index.css" rel="stylesheet" type="text/css"/>
+<link href="static/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width:768px)"/>
+</head>
+
+<body>
+
+<div class="scroll" >
+	<p>往下滚动试试</p>
+	<img src="static/images/scroll.png" />
+</div>
+
+<ul class="curtain">
+	<li class="step start">
+		<a href="http://lilystudio.org" target="_blank" class="logo"><img src="static/images/logo.png" /></a>
+		<div class="cloud">
+			<img src="static/images/zhaoxinla.png" alt="招新啦！" class="zhaoxinla" />
+		</div>
+		
+	</li>
+	<li class="step jishu">
+		<div class="decorator"></div>
+		<div class="intro">
+			<h2>技术组</h2>
+		    <p>负责产品的代码实现</p>
+		    <p>拥有较强的编写代码能力</p>
+		</div>
+	</li>
+	<li class="step meigong">
+		<div class="decorator"></div>
+		<div class="intro">
+			<h2>美工组</h2>
+		    <p>负责产品的前端、交互的设计</p>
+		    <p>熟悉HTML/CSS/JS及Photoshop的使用</p>
+		</div>
+	</li>
+	<li class="step cehua">
+		<div class="decorator"></div>
+		<div class="intro">
+			<h2>策划组</h2>
+		    <p>负责策划各类工作安排</p>
+		    <p>对产品有一定热情，对技术有适当了解</p>
+		</div>
+	</li>
+	<li class="step form">
+		<div class="decorator"></div>
+		<h2 class="join">加入我们</h2>
+		<form action="b.php" method="post" class="register">
+			{% csrf_token %}
+
+			<div class="fl left">
+				<p class="field"><label for="name">我的大名</label><input type="text" id="name" name="name" /></p>
+				<p class="field"><label for="number">学号</label><input type="text" id="number" name="number" /></p>
+				<p class="field"><label for="dept">院系</label><input type="text" id="dept" name="dept" /></p>
+				<p class="field"><label for="phone">电话号码</label><input type="text" id="phone" name="phone" /></p>
+				<p class="field">
+					<label for="group">我想加入</label>
+					<select id="group" name="group">
+						<option>技术组</option>
+						<option>美工组</option>
+						<option>策划组</option>
+					</select>
+				</p>
+			</div>
+			
+			<div class="fl right">
+				<p class="field"><label for="exper">个人经历</label><textarea id="exper" name="exper"></textarea></p>
+			    <p class="field"><label for="hobby">兴趣爱好</label><textarea id="hobby" name="hobby"></textarea></p>
+			    <p><input class="btn fr" type="submit" id="submit" value="报名"/></p>  
+			</div>
+			
+			<div class="ok" style="display:none;"></div> 
+		</form>
+	</li>
+</ul>
+
+<ul class="curtain-controler">
+	<li class="step start" data-num="0">
+		<img src="static/images/home.jpg" class="fl"><span class="hidden fr" style="display:none">LilyStudio招新啦！</span>
+	</li>
+	<li class="step jishu" data-num="1">
+		<span class="fl" style="margin-left:20px;">1</span><span class="hidden fr" style="display:none">技术组</span> 
+	</li>
+	<li class="step meigong" data-num="2">
+		<span class="fl" style="margin-left:20px;">2</span><span class="hidden fr" style="display:none">美工组</span>
+	</li>
+	<li class="step cehua" data-num="3">
+		<span class="fl" style="margin-left:20px;">3</span><span class="hidden fr" style="display:none">策划组</span>
+	</li>
+	<li class="step form" data-num="4">
+		<span class="fl" style="margin-left:20px;">4</span><span class="hidden fr" style="display:none">现在就报名！</span>
+	</li>
+</ul>
+
+
+       
+
+<script type="text/javascript" src="static/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="static/jquery.transit.min.js"></script>
+<script type="text/javascript" src="static/index.js"></script>
+<script type="text/javascript">
+console.log('ʕ•̫͡•ʔ 快来加入我们吧！');
+</script>
+<!-- Piwik -->
+<script type="text/javascript"> 
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://lilystudio.org/piwik//";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://lilystudio.org/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="static/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+<link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+<div class="center well well-small text-center" style="margin-top:300px;">
+		<h2>登录</h2>
+
+<form action="view.php" method="post">
+		{% csrf_token %}
+		<div class="input-prepend">
+				<span class="add-on">
+						<i class="icon-user"></i>
+				</span>
+				<input type="text" name="name" required="required" />
+		</div>
+		<br />
+		<button type="submit" class="btn btn-large btn-primary">登录</button>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+@font-face{
+    font-family: 'snowren';
+    src: url('./yasuo.ttf');
+}
+
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.clearfix{
+	*+height:1%;
+}
+
+.fl{
+	float: left;
+
+}
+
+.fr{
+	float: right;
+}
+
+body,ul,li{
+	margin: 0 0;
+	padding: 0;
+}
+
+.curtain{
+	width: 100%;
+}
+
+.curtain .step{
+	width: 100%;
+	min-height: 880px;
+	display: block;
+	text-align: center;
+	font-family: 'snowren','Arial';
+	color: #fff;
+}
+
+.curtain .step .intro{
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.curtain .jishu,.curtain .cehua,.curtain .meigong{
+	font-size: 50px;
+	text-align: left;
+}
+
+.curtain .jishu h2,.curtain .cehua h2,.curtain .meigong h2{
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+.curtain .jishu p,.curtain .cehua p,.curtain .meigong p{
+	margin: 0;
+	margin-left: 60px;
+	line-height: 70px;
+}
+
+.decorator{
+	width: 240px;
+	height: 225px;
+	z-index: -1;
+	float: right;
+	margin-right: 140px;
+	margin-top: 363px;
+}
+
+.jishu .decorator{	
+	background: url('./images/tech.png') no-repeat center;
+}
+
+.meigong .decorator{	
+	background: url('./images/pic.png') no-repeat center;
+}
+
+.cehua .decorator{	
+	background: url('./images/doc.png') no-repeat center;
+}
+
+.form .decorator{	
+	background: url('./images/people.png') no-repeat center;
+}
+
+
+.curtain-controler{
+	position: fixed;
+	top: 40%;
+	left: 0;
+	z-index: 99;
+}
+
+.curtain-controler .step{
+	list-style: none;
+	cursor: pointer;
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'NeutraDisplayBold',Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 2px rgba(90,90,90,0.5); 
+}
+
+.curtain-controler .step .hidden{
+	margin-right: 8px;
+}
+
+.start{
+	background: rgb(255, 252, 221);
+}
+
+.curtain-controler .start{
+	background: #d7c37a;
+}
+
+.cehua{
+	background: rgb(197, 187, 1);
+}
+
+.curtain-controler .cehua{
+	background: rgb(197, 170, 1);
+}
+
+.jishu{
+	background: #af0244;
+}
+
+.curtain-controler .jishu{
+	background: rgb(165, 2, 60);
+}
+
+.meigong{
+	background: #07a0a8;
+}
+
+.curtain-controler .meigong{
+	background: rgb(7 ,150, 160);
+}
+
+.form{
+	background: #2a0f3c;
+}
+
+.curtain-controler .form{
+	background: rgb(112, 26, 106);
+}
+
+.logo,.cloud,.scroll{
+	display: block;
+	margin: 0 auto;
+}
+
+.logo{
+	margin-top: 50px;
+	border: 0;
+	width: 500px;
+	height: 152px;
+
+	-webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+}
+
+.logo img{
+	border: 0;
+}
+
+.logo:hover{
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px,-8px);
+    -moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px,-8px);
+    -o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px,-8px);
+    -ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px,-8px);
+    transform: rotate(0deg) scale(1) skew(0deg) translate(0px,-8px);
+}
+
+.cloud{
+	margin-top: 85px;
+	width: 288px;
+	height: 175px;
+	background: url('./images/cloud.png') no-repeat center;
+}
+
+.cloud .zhaoxinla{
+	margin-top: 90px;
+
+	-webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+}
+
+.cloud:hover .zhaoxinla{
+	-webkit-transform: rotate(-4deg) scale(1.15) skew(0deg) translate(0px);
+    -moz-transform: rotate(-4deg) scale(1.15) skew(0deg) translate(0px);
+    -o-transform: rotate(-4deg) scale(1.15) skew(0deg) translate(0px);
+    -ms-transform: rotate(-4deg) scale(1.15) skew(0deg) translate(0px);
+    transform: rotate(-4deg) scale(1.15) skew(0deg) translate(0px);
+}
+
+.scroll{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    bottom: 20px;
+    left: 47%;
+    left: -moz-calc(50% - 40px);
+    left: -webkit-calc(50% - 40px);
+    left: calc(50% - 40px);
+
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+}
+
+.scroll:hover{
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px,8px);
+    -moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px,8px);
+    -o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px,8px);
+    -ms-transform: rotate(0deg) scale(1) skew(0deg) translate(0px,8px);
+    transform: rotate(0deg) scale(1) skew(0deg) translate(0px,8px);
+}
+
+.scroll p{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 8px;
+    font-family: "Microsoft Yahei";
+    text-align: center;
+}
+
+.register{
+	margin-left: 220px;
+    margin-top: 180px;
+    text-align: left;
+    height: 200px;
+    position: relative;
+    -moz-perspective: 201px;
+    -webkit-perspective: 201px;
+    perspective: 201px;
+    padding: 0;
+}
+
+.left{
+	margin-right: 61px;
+	clear: left;
+}
+
+.join{
+	font-size: 60px;
+	font-weight: normal;
+	margin-left: 140px;
+	float: left;
+}
+
+.register .field label{
+	font-size: 22px;
+	width: 120px;
+	display: inline-block;
+	vertical-align:top;
+    margin-top: 4px;
+}
+
+.register .field input,.register .field textarea,.register .field select{
+	background: #b8aac2;
+	border: 0;
+	border-radius: 6px;
+	font-size: 14px;
+	outline: none;
+	padding: 4px 10px;
+}
+
+.register .field input:focus,.register .field textarea:focus,.register .field select:focus{
+	box-shadow: 0 0 10px #b8aac2;
+}
+
+.register .field select{
+	margin-left: -8px;
+	width: 100px;
+	height: 30px;
+	width: 120px;
+}
+
+.register .field input{
+	height: 22px;
+	line-height: 30px;
+	width: 100px;
+	margin-bottom: 14px;
+}
+
+.register .field textarea{
+	margin-bottom: 7px;
+	resize: none;
+	width: 240px;
+	height: 114px;
+	overflow: auto;
+}
+
+.register .btn{
+	width: 84px;
+	height: 37px;
+	display: inline-block;
+	line-height: 37px;
+	font-size: 14px;
+	background: url("./images/btn.png") no-repeat center;
+	border: 0;
+	cursor: pointer;
+	color: #fff;
+	font-family: "Arial";
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.register .ok{
+	width: 200px;
+	height: 204px;
+	background: url('./images/ok.png') no-repeat center;
+	position: absolute;
+	top: 50px;
+	left: 210px;
+	z-index: 999;
+
+    -webkit-transform: translateZ(300px);
+    -moz-transform: translateZ(300px);
+    -o-transform: translateZ(300px);
+    -ms-transform: translateZ(300px);
+    transform: translateZ(300px);
+}
+
